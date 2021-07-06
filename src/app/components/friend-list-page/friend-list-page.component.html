@@ -1,0 +1,41 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+  @media screen and (max-width: 810px) {
+    #section1, #section2, #section3, #section41, #section42 {
+      margin-left: 150px;
+    }
+  }
+</style>
+<div class="row-sm-2">
+  <div class="col-sm-4">
+    <h2> Friends List</h2>
+    <div #alert class="alert alert-success alert-dismissible hide " style="width: 30vh; height: 10vh; text-align: right" role="alert">
+      <button type="button" class="close" aria-label="Close" (click)="closeAlert()">&times;</button>Friend Added!
+    </div>
+  </div>
+
+  <br><br><br>
+
+  <div class="row-sm-10">
+    <div class="scrollbar container scrollbar-primary" style="min-height: 80vh">
+      <div class="card-body">
+        <div class="row">
+          <div appHighlight *ngFor="let friend of friendsList" id="section1" class="shadow" style="width:70vh; height:20vh">
+            <div class="col-md-10">
+              <h1>{{friend.name}}</h1>
+              {{friend.email}}
+            </div>
+            <div class="col-md-2">
+              
+              <br> <br>
+
+              <button class="btn btn-dark" (click)="addFriend()">
+                <span class="glyphicon glyphicon-plus"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+  

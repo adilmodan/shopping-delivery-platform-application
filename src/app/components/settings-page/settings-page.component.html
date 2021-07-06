@@ -1,0 +1,75 @@
+<div class="container-fluid">\
+  <div></div>
+  <div class="row">
+    <div class="col-md-2">
+      <div class="container">
+        <nav class="navbar">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item mx-3">
+              <button type="button" class="btn btn-dark" (click)="editProfile()">
+                <span class="glyphicon glyphicon-edit"></span> Edit Profile
+              </button>
+            </li>
+            <br />
+            <li class="nav-item mx-3">
+              <button type="button" class="btn btn-dark" routerLink="/address"> Addresses </button>
+            </li>
+            <br />
+            <li class="nav-item mx-3">
+              <button type="button" class="btn btn-dark" routerLink="/payment"> Payment  </button>
+            </li>
+            <br>
+            <div #alert class="alert alert-success alert-dismissible hide " role="alert">
+              <button type="button" class="close" aria-label="Close" (click)="closeAlert()">&times;</button>Details Updated!
+            </div>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="col-md-10">
+      <div class="container-fluid fill-height" style="text-align: center;">
+        <div #displayUser>
+          <img src="assets/images/user-icon.png" class="image" width="70px" height="70px">
+          <br />
+          <div class="card-md-2">
+            <div class="card-body"> {{user?.name}} </div>
+          </div>
+          <div class="card-md-2">
+            <div class="card-body"> {{user?.email}} </div>
+          </div>
+          <div>
+            <div class="card-body"> {{user?.phonenumber}}</div>
+          </div>
+          <div>
+          </div>
+        </div>
+
+        <div #editUser class="hide">
+          <img src="assets/images/user-icon.png" class="image" width="70px" height="70px">
+          <br>
+          <br>
+          <div class="card-md-2">
+            <label> User name </label>
+            <br>
+            <input type="text" id="username" [(ngModel)]="user.name">
+          </div>
+          <div class="card-md-2">
+            <label> Email </label>
+            <br>
+            <input type="text" id="email" [(ngModel)]="user.email">
+          </div>
+          <div class="card-md-2">
+            <label> Phone No </label>
+            <br>
+            <input type="number" id="phoneNo" [(ngModel)]="user.phonenumber">
+          </div>
+          <br>
+          <div class="card-md-2">
+            <button class="btn btn-success mx-3" (click)="updateProfile()"> Update </button>
+            <button class="btn btn-dark"> Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

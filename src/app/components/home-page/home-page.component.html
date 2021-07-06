@@ -1,0 +1,16 @@
+<div *ngIf="isDataFetched === false; then search else resturantSearch "></div>
+
+<ng-template #search>
+  <div class="col text-center">
+  <h1>Order food from favorite local resturant.</h1>
+  <input [(ngModel)]="searchBox" class="form-control" type="text" id="searchBox" placeholder="Enter Resturant" required>
+  <br>
+  <button (click)="handleSubmit()" class="btn btn-success">Search Resturants</button>
+  </div>
+</ng-template>
+
+<ng-template #resturantSearch>
+  <ul class="list-group">
+   <app-network-page [resturant]="searchBox"></app-network-page>    
+  </ul>
+</ng-template>

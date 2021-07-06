@@ -1,0 +1,68 @@
+<div class="container-fluid">
+  <div></div>
+  <div class="row">
+    <div class="col-md-2">
+      <div class="container">
+        <nav class="navbar">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item mx-3">
+              <button type="button" class="btn btn-dark" routerLink="/settings">
+                <span class="glyphicon glyphicon-cog"></span> Settings
+              </button>
+            </li>
+            <br />
+            <li class="nav-item mx-3">
+              <button type="button" class="btn btn-dark" routerLink="/address"> Addresses </button>
+            </li>
+            <br />
+            <li class="nav-item mx-3">
+              <button type="button" class="btn btn-dark" (click)="edit()"> Payment  </button>
+            </li>
+            <br>
+            <div #alert class="alert alert-success alert-dismissible hide " role="alert">
+              <button type="button" class="close" aria-label="Close" (click)="closeAlert()">&times;</button>Details Updated!
+            </div>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="col-md-10">
+      <div class="container-fluid fill-height" style="text-align: center;">
+        <div #displayPayment class="hide">
+          <br>
+          <br>
+          <div class="card-md-2">
+            <label> Card #1</label>
+            <div class="card-body"> {{payment.payment1}} </div>
+          </div>
+          <div class="card-md-2">
+            <label> Card #2</label>
+            <div class="card-body"> {{payment.payment2}} </div>
+          </div>
+          <div>
+          </div>
+        </div>
+
+        <div #editPayment>
+          <br>
+          <br>
+          <div class="card-md-2">
+            <label> Card #1 </label>
+            <br>
+            <input type="text" id="payment1" [(ngModel)]="payment.payment1">
+          </div>
+          <div class="card-md-2">
+            <label> Card #2 </label>
+            <br>
+            <input type="text" id="payment2" [(ngModel)]="payment.payment2">
+          </div>
+          <br>
+          <div class="card-md-2">
+            <button class="btn btn-success mx-3" (click)="updatePayment()"> Update </button>
+            <button class="btn btn-dark"> Cancel</button>
+          </div>
+        </div>
+
+      </div>
+

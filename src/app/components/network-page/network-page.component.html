@@ -1,0 +1,36 @@
+<div>
+  <div class="row">
+    <div class="col-12">
+      <div class="card">
+        <div class="card-header bg-info text-center">Restaurants</div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-8-xl-4 col-sm-6 col-12 border border-warning mb-2" *ngFor="let i of feeds | search: resturant">
+
+              <div class="row text-center mb-2">
+                <div class="col-12">
+                  <img class="img-fluid mt-3" src="{{ i.image_url }}" alt="image" />
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-12">
+                  <h6 class="card-title font-weight-bold">{{i.restaurent_name}}</h6>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6">
+                  <p class="card-text"><small>{{i.rating}}</small>&#9734;</p>
+                </div>
+                <button [routerLink]="['/order']" class="btn btn-sm btn-success" style="margin-bottom: 5px;">
+                  Order From Here
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

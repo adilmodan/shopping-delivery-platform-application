@@ -1,0 +1,52 @@
+<div class="container" style="padding-top: 1px; padding-right: 5px; padding-left: 5px;">
+  <div class="border border-dark">
+    <div class="border-top">
+      <div class="border-left">
+        <div class="border-right">
+          <div class="card">
+            <div class="card-header">
+              <h4>Order #001</h4>
+            </div>
+            <div class="row">
+              <div class="card-body" style="text-align: center;">
+                <button type="button" style="margin-left: 35px; margin-right: 35px;" class="btn btn-outline-dark btn-lg shadow rounded" (click)="placed()">
+                  <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2-square" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M15.354 2.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L8 9.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+                    <path fill-rule="evenodd" d="M1.5 13A1.5 1.5 0 0 0 3 14.5h10a1.5 1.5 0 0 0 1.5-1.5V8a.5.5 0 0 0-1 0v5a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5V3a.5.5 0 0 1 .5-.5h8a.5.5 0 0 0 0-1H3A1.5 1.5 0 0 0 1.5 3v10z" />
+                  </svg>
+                  Placed
+                </button>
+                <button type="button" style="margin-left: 35px; margin-right: 35px;" class="btn btn-outline-dark btn-lg shadow rounded" (click)="picked()">
+                  <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2-square"
+                       fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                          d="M15.354 2.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L8 9.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+                    <path fill-rule="evenodd"
+                          d="M1.5 13A1.5 1.5 0 0 0 3 14.5h10a1.5 1.5 0 0 0 1.5-1.5V8a.5.5 0 0 0-1 0v5a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5V3a.5.5 0 0 1 .5-.5h8a.5.5 0 0 0 0-1H3A1.5 1.5 0 0 0 1.5 3v10z" />
+                  </svg>
+                  Picked Up
+                </button>
+                <button type="button" style="margin-left: 35px; margin-right: 35px;" class="btn btn-outline-dark btn-lg shadow rounded" (click)="delivered()">
+                  Delivered
+                </button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="card-body" style="text-align: center;">
+                <label>Status:</label>
+                <!-- <label class="shadow rounded border-dark" style="padding-bottom: 5px; padding-top: 5px; padding-right: 5px; padding-left: 5px;">Status:</label> -->
+                <button type="button" style="margin-left: 15px; margin-right: 35px;"
+                        class="btn btn-outline-dark btn-lg shadow rounded">
+                  Processing..
+                </button>
+              </div>
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-secondary btn-block" [routerLink]="['/network']">Back to Restaraunts</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

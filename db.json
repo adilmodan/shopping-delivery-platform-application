@@ -1,0 +1,361 @@
+{
+  "feed": [
+    {
+      "id": 1,
+      "created_at": "2021-06-14T17:08:41.000000Z",
+      "updated_at": "2021-06-12T17:08:41.000000Z",
+      "restaurent_name": "Modan Biryani House",
+      "rating": "4.5",
+      "description": "Indian",
+      "name": "Roasted Chicken Biryani",
+      "image_url": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/ylkrbzvqollrxfc5kp53",
+      "cost": "190"
+    },
+    {
+      "id": 2,
+      "created_at": "2021-06-14T17:08:41.000000Z",
+      "updated_at": "2021-06-12T17:08:41.000000Z",
+      "restaurent_name": "Momos",
+      "rating": "3.5",
+      "description": "Indian",
+      "name": "Chicken Momos",
+      "image_url": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_366,h_240,c_fill/jjvieg2ytl9l0y0fhtri",
+      "cost": "69"
+    },
+    {
+      "id": 3,
+      "created_at": "2021-06-14T17:08:41.000000Z",
+      "updated_at": "2021-06-12T17:08:41.000000Z",
+      "restaurent_name": "Kabablo",
+      "rating": "1.5",
+      "description": "Indian",
+      "name": "Cajun Spiced Chicken",
+      "image_url": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_366,h_240,c_fill/vx4uld2hyksrrlrmqpmg",
+      "cost": "260"
+    },
+    {
+      "id": 4,
+      "created_at": "2021-06-14T17:08:41.000000Z",
+      "updated_at": "2021-06-12T17:08:41.000000Z",
+      "restaurent_name": "Dumplings",
+      "rating": "4.0",
+      "description": "Asian, Chinese, Thai",
+      "name": "Steamed Chicken Dumplings",
+      "image_url": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_366,h_240,c_fill/j0uxiukml9jzpxvxbt0w",
+      "cost": "150"
+    },
+    {
+      "id": 5,
+      "created_at": "2021-06-14T17:08:41.000000Z",
+      "updated_at": "2021-06-12T17:08:41.000000Z",
+      "restaurent_name": "Rice Bowl",
+      "rating": "3.0",
+      "description": "Fast Food, North Indian",
+      "name": "Immunity Booster Chole Rice Bowl",
+      "image_url": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_366,h_240,c_fill/nqw2klwsqyfnjow5x2fy",
+      "cost": "200"
+    },
+    {
+      "id": 6,
+      "created_at": "2021-06-14T17:08:41.000000Z",
+      "updated_at": "2021-06-12T17:08:41.000000Z",
+      "restaurent_name": "Toast",
+      "rating": "2.4",
+      "description": "Korean, Continental, Bakery",
+      "name": "Cheese Chilli Toast",
+      "image_url": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_366,h_240,c_fill/wjfwo0mpmfs7fub7ykvp",
+      "cost": "250"
+    },
+    {
+      "id": 7,
+      "created_at": "2021-06-14T17:08:41.000000Z",
+      "updated_at": "2021-06-12T17:08:41.000000Z",
+      "restaurent_name": "Fried Chicken",
+      "rating": "4.5",
+      "description": "North Indian",
+      "name": "Fried Chicken",
+      "image_url": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_366,h_240,c_fill/yktmfporzgu0jatkevqr",
+      "cost": "125"
+    },
+    {
+      "id": 8,
+      "created_at": "2021-06-14T17:08:41.000000Z",
+      "updated_at": "2021-06-12T17:08:41.000000Z",
+      "restaurent_name": "Pakora Side Dish",
+      "rating": "4.3",
+      "description": "Chinese, North Indian",
+      "name": "Chicken Pakora",
+      "image_url": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_366,h_240,c_fill/gjuhuccffbwnonxanyl9",
+      "cost": "145"
+    },
+    {
+      "id": 9,
+      "created_at": "2021-06-14T17:08:41.000000Z",
+      "updated_at": "2021-06-12T17:08:41.000000Z",
+      "restaurent_name": "Fried Chicken Charga",
+      "rating": "3.8",
+      "description": "Indian",
+      "name": "Chicken Dry Fry",
+      "image_url": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_366,h_240,c_fill/d59qdvgdq2caad7nhipx",
+      "cost": "100"
+    },
+    {
+      "id": 10,
+      "created_at": "2021-06-14T17:08:41.000000Z",
+      "updated_at": "2021-06-12T17:08:41.000000Z",
+      "restaurent_name": "Tandoori Chicken",
+      "rating": "3.0",
+      "description": "Mughlai, North Indian, Chinese",
+      "name": "Tandoori Chicken",
+      "image_url": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_366,h_240,c_fill/onlp7ojjmh1qhivm0yxv",
+      "cost": "230"
+    }
+  ],
+  "friends": [
+    {
+      "id": 1,
+      "name": "Max Dixit",
+      "email": "max.dixit@gmail.com",
+      "email_verified_at": null,
+      "created_at": "2021-06-14T17:08:41.000000Z",
+      "updated_at": "2021-06-12T17:08:41.000000Z",
+      "api_token": "ZQmAInGvpKxMntjdJf7Oa2toA0hp3mabCMPmjuI8P2RqHloZbnolFC19h3OI"
+    },
+    {
+      "id": 2,
+      "name": "John",
+      "email": "john.doe@gmail.com",
+      "email_verified_at": null,
+      "created_at": "2021-06-14T17:08:41.000000Z",
+      "updated_at": "2021-06-12T17:08:41.000000Z",
+      "api_token": null
+    },
+    {
+      "id": 3,
+      "name": "Raj",
+      "email": "raj.malhotra@gmail.com",
+      "email_verified_at": null,
+      "created_at": "2021-06-14T17:08:41.000000Z",
+      "updated_at": "2021-06-12T17:08:41.000000Z",
+      "api_token": null
+    },
+    {
+      "id": 4,
+      "name": "Simran",
+      "email": "simran.malhotra@gmail.com",
+      "email_verified_at": null,
+      "created_at": "2021-06-14T17:08:41.000000Z",
+      "updated_at": "2021-06-12T17:08:41.000000Z",
+      "api_token": "nixEZW06CB9b3QWxGXpKSZnXylYwVVulXOXBrwaBkXw6aIyFBTgV1jjRYJkj"
+    },
+    {
+      "id": 5,
+      "name": "Jonny Bravo",
+      "email": "jonny.bravo@gmail.com",
+      "email_verified_at": null,
+      "created_at": "2021-06-14T17:08:41.000000Z",
+      "updated_at": "2021-06-12T17:08:41.000000Z",
+      "api_token": "KnsWA4qLDblh4OIzM3i3UK4g2IQqCzKqEQs866DphGT2oYJEowfPGgGplrbO"
+    },
+    {
+      "id": 6,
+      "name": "Edureka",
+      "email": "admin@edureka.com",
+      "email_verified_at": null,
+      "created_at": "2020-05-04T04:52:42.000000Z",
+      "updated_at": "2020-05-14T04:50:56.000000Z",
+      "api_token": "0Eb4Mz019wCrBs55iZXVTxZVATpUvcjumcUdPyoLvTDhGA97JzLipDQYGl58"
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "name": "Burger",
+      "price": 4.99,
+      "description": "Choose a single or double stack burger",
+      "quantity": 1,
+      "image": "https://fastly.4sqi.net/img/general/200x200/87388367_BRaxRT3RR_vOwsblxC92l_i73OhBJ81rwTauic9RO4o.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Nuggets",
+      "price": 2.99,
+      "description": "Can have spicy or regular nuggets",
+      "quantity": 4,
+      "image": "https://www.gannett-cdn.com/presto/2019/06/25/USAT/a1c17af3-4d95-4604-8be7-988cba21b5a3-Wendys_Spicy_Nuggets.jpg?crop=3283,3283,x1754,y493&width=200&height=200&fit=bounds"
+    },
+    {
+      "id": 3,
+      "name": "Frosty",
+      "price": 0.99,
+      "description": "Comes in chocolate or vanilla",
+      "quantity": 1,
+      "image": "https://www.gannett-cdn.com/-mm-/0414d12a767b91762cc525cbc3108e803904750d/c=100-0-300-200/local/-/media/2018/05/21/USATODAY/USATODAY/636624998799016994-Frosty.jpg?width=200&height=200&fit=crop"
+    },
+    {
+      "id": 4,
+      "name": "Chili",
+      "price": 1.99,
+      "description": "Comes with saltine crackers",
+      "quantity": 1,
+      "image": "https://i.pinimg.com/600x315/d5/85/df/d585df6c31d2f3c710fcc88b087a2817.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Fries",
+      "price": 0.99,
+      "description": "This is the value portion",
+      "quantity": 1,
+      "image": "https://restaurantnews.com/wp-content/uploads/2011/04/Wendys-Fries-Beat-McDonalds-in-National-Taste-Test.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Chicken Sandwhich",
+      "price": 6.99,
+      "description": "This comes with either pepper-jack or colby cheese on top",
+      "quantity": 1,
+      "image": "https://i.pinimg.com/originals/90/d1/a0/90d1a058b51a8423c9b77a6902ac9178.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Baconator",
+      "price": 10.99,
+      "description": "Choose a single or double or triple stack burger",
+      "quantity": 1,
+      "image": "https://static.slickdealscdn.com/attachment/1/8/9/1/4/3/4/200x200/8981486.thumb"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Jake Paul",
+      "email": "jake.paul@gmail.com",
+      "email_verified_at": null,
+      "created_at": "2021-06-14T17:08:41.000000Z",
+      "updated_at": "2021-06-12T17:08:41.000000Z",
+      "api_token": "ZQmAInGvpKxMntjdJf7Oa2toA0hp3mabCMPmjuI8P2RqHloZbnolFC19h3OI",
+      "password": "123456",
+      "phoneNo": 4159846374
+    },
+    {
+      "id": 2,
+      "name": "Raj",
+      "email": "raj.malhotra@gmail.com",
+      "email_verified_at": null,
+      "created_at": "2021-06-14T17:08:41.000000Z",
+      "updated_at": "2021-06-12T17:08:41.000000Z",
+      "password": "123456",
+      "api_token": null,
+      "phoneNo": 4157474734
+    },
+    {
+      "id": 3,
+      "name": "Austin",
+      "email": "autin.doe1@gmail.com",
+      "email_verified_at": null,
+      "created_at": "2021-06-14T17:08:41.000000Z",
+      "updated_at": "2021-06-12T17:08:41.000000Z",
+      "password": "123456",
+      "api_token": null,
+      "phoneNo": 4159357590
+    },
+    {
+      "id": 4,
+      "name": "Simran",
+      "email": "simran@gmail.com",
+      "email_verified_at": null,
+      "created_at": "2021-06-14T17:08:41.000000Z",
+      "updated_at": "2021-06-12T17:08:41.000000Z",
+      "api_token": "nixEZW06CB9b3QWxGXpKSZnXylYwVVulXOXBrwaBkXw6aIyFBTgV1jjRYJkj",
+      "password": "123456",
+      "phoneNo": 4159472305
+    },
+    {
+      "id": 5,
+      "name": "Michael Jackson",
+      "email": "jackson@gmail.com",
+      "email_verified_at": null,
+      "created_at": "2021-06-14T17:08:41.000000Z",
+      "updated_at": "2021-06-12T17:08:41.000000Z",
+      "api_token": "KnsWA4qLDblh4OIzM3i3UK4g2IQqCzKqEQs866DphGT2oYJEowfPGgGplrbO",
+      "password": "123456",
+      "phoneNo": 5107063570
+    },
+    {
+      "phonenumber": 12345678912,
+      "name": "Test",
+      "email": "test@test",
+      "email_verified_at": null,
+      "password": "test",
+      "created_at": "2021-06-14T17:08:41.000000Z",
+      "updated_at": "2021-06-12T17:08:41.000000Z",
+      "api_token": null,
+      "id": 6
+    },
+    {
+      "phonenumber": "4159127197",
+      "name": "Adil Modan",
+      "email": "aadil@email.com",
+      "email_verified_at": null,
+      "password": "adil123",
+      "created_at": "2021-06-10T22:23:00.382Z",
+      "updated_at": "2021-06-10T22:23:00.382Z",
+      "api_token": null,
+      "id": 7
+    }
+  ],
+  "addresses": [
+    {
+      "address1": "Ap #752-5547 Fusce Aie",
+      "address2": "Dallas",
+      "id": 1
+    },
+    {
+      "address1": "200 Burl ln",
+      "address2": "chicago",
+      "id": 7
+    }
+  ],
+  "payments": [
+    {
+      "payment1": "47576878",
+      "id": 2
+    },
+    {
+      "payment1": "56464507459433",
+      "id": 1,
+      "payment2": "9765575675565"
+    },
+    {
+      "payment1": "85693214785412369",
+      "payment2": "1236987456321452",
+      "id": 7
+    }
+  ],
+  "cart": [
+    {
+      "id": 1,
+      "name": "Baconator",
+      "price": 10.99,
+      "description": "Choose a single or double or triple stack burger",
+      "quantity": 1,
+      "image": "https://static.slickdealscdn.com/attachment/1/8/9/1/4/3/4/200x200/8981486.thumb"
+    },
+    {
+      "id": 2,
+      "name": "Fries",
+      "price": 0.99,
+      "description": "This is the value portion",
+      "quantity": 1,
+      "image": "https://restaurantnews.com/wp-content/uploads/2011/04/Wendys-Fries-Beat-McDonalds-in-National-Taste-Test.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Chicken Sandwhich",
+      "price": 6.99,
+      "description": "This comes with either pepper-jack or colby cheese on top",
+      "quantity": 1,
+      "image": "https://i.pinimg.com/originals/90/d1/a0/90d1a058b51a8423c9b77a6902ac9178.jpg"
+    }
+  ]
+}

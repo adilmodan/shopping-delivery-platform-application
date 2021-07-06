@@ -1,0 +1,36 @@
+<div class="container" style="padding-top: 1px; padding-right: 5px; padding-left: 5px;">
+  <div class="border border-dark">
+    <div class="overflow-auto">
+      <div class="card">
+        <!-- This displays all the orders -->
+        <div class="card-header">
+          <h1 style="text-align: center">Your Cart</h1>
+        </div>
+        <div class="card-body overflow-auto" style="height: 400px;">
+          <ul class="list-unstyled">
+            <br>
+            <li class="media" *ngFor="let i of foods">
+              <div class="col">
+                <img class="mr-3"
+                     src="{{ i.image }}" alt="Generic placeholder image">
+              </div>
+              <div class="col">
+                <div class="media-body">
+                  <h4 class="mt-0 mb-1">{{ i.name }}</h4>
+                  <p>{{ i.price }}</p>
+                  <p>{{ i.description }}</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- This displays the Submit button that leads to the tracking page and whats in your cart button -->
+        <div class="card-footer">
+          <button [routerLink]="['/tracking']" class="btn btn-success" (click)="message()">Submit Order</button>
+          <button [routerLink]="['/order']" class="btn btn-warning" style="margin-left: 10px;">Back to Menu</button>
+          <button [routerLink]="['/network']" class="btn btn-warning" style="margin-left: 10px;">Back to Restaraunts</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

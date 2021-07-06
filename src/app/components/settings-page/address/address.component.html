@@ -1,0 +1,72 @@
+<div class="container-fluid">
+
+  </div>
+  <div></div>
+  <div class="row">
+    <div class="col-md-2">
+      <div class="container">
+        <nav class="navbar">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item mx-3">
+              <button type="button" class="btn btn-dark" routerLink="/settings">
+                <span class="glyphicon glyphicon-cog"></span>Settings
+              </button>
+            </li>
+            <br />
+            <li class="nav-item mx-3">
+              <button type="button" class="btn btn-dark" (click)="edit()"> Addresses </button>
+            </li>
+            <br />
+            <li class="nav-item mx-3">
+              <button type="button" class="btn btn-dark" routerLink="/payment"> Payment  </button>
+            </li>
+            <br>
+            <div #alert class="alert alert-success alert-dismissible hide " role="alert">
+              <button type="button" class="close" aria-label="Close" (click)="closeAlert()">&times;</button>Details Updated!
+            </div>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="col-md-10">
+      <div class="container-fluid fill-height" style="text-align: center;">
+        <div #displayAddress class="hide">
+          <br>
+          <br>
+          <div class="card-md-2">
+            <label> Address Line 1</label>
+            <div class="card-body"> {{address.address1}} </div>
+          </div>
+          <div class="card-md-2">
+            <label> Address Line 2</label>
+            <div class="card-body"> {{address.address2}} </div>
+          </div>
+          <div>
+          </div>
+        </div>
+
+        <div #editAddress>
+          <br>
+          <br>
+          <div class="card-md-2">
+            <label> Address Line 1 </label>
+            <br>
+            <input type="text" id="address1" [(ngModel)]="address.address1">
+          </div>
+          <div class="card-md-2">
+            <label> Address Line 2 </label>
+            <br>
+            <input type="text" id="address2" [(ngModel)]="address.address2">
+          </div>
+          <br>
+          <div class="card-md-2">
+            <button class="btn btn-success mx-3" (click)="updateAddress()"> Update </button>
+            <button class="btn btn-dark"> Cancel</button>
+          </div>
+        </div>
+
+
+      </div>
+
+

@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <form #loginForm="ngForm" (ngSubmit)="loginForm.valid && handleSubmit()">
+      <div class="form-group">
+        <label for="email">Username</label>
+        <input type="email" [(ngModel)]="model.email" name="email" id="email" class="form-control"
+               placeHolder="Email" required email #email="ngModel"
+               [ngClass]="{ 'is-invalid': email.touched && email.invalid }">
+        <span class="invalid-feedback">
+          <span *ngIf="email.errors?.required">Email is required</span>
+          <span *ngIf="email.errors?.email">Not a valid email.</span>
+        </span>
+      </div>
+
+      <div class="form-group">
+        <label for="password">password</label>
+        <input type="password" #password="ngModel" [(ngModel)]="model.password" name="password"
+               placeHolder="Password" id="password" class="form-control" required
+               [ngClass]="{ 'is-invalid': password.touched && password.invalid }">
+        <span class="invalid-feedback">Password can't be blank.</span>
+      </div>
+
+      <button [disabled]="email.invalid" class="btn btn-primary">Submit</button>
+      &nbsp;
+      <button routerLink="/forgotPassword" class="btn btn-primary">Forgot Password</button>
+    </form>
+  </div>
+</div>

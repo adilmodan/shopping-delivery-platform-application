@@ -1,0 +1,15 @@
+.fill-height{
+    height:80vh;
+    width: 95vh;
+    border: 2px solid #1eb418;
+    padding: 25px;
+    border-radius: 2px;   
+}
+
+.container{
+    width:30vh;
+    height:80vh;
+}
+.image1{
+    padding-left: 35px;
+}
